@@ -8,10 +8,20 @@ class YamlExample
   end
 
   def print_user_credentials
-    puts @user_credentials
+    p @user_credentials
+  end
+
+  def print_environment
+    p @environments
+  end
+
+  def print_nested
+    p @nested
   end
 end
 
 yaml = YamlExample.new
 
 yaml.print_user_credentials
+yaml.print_environment
+yaml.print_nested
